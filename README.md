@@ -48,4 +48,17 @@ What is usermode? well its kinda simple actually.</br>
 -You can restrict the memory access potential on an application</br>
 -You can look anywhere in memory the kernel table, page files what ever you want</br>
 -You have infinite potential paired with a usermode anti cheat module for ioctl</br>
--You have direct hardware access
+-You have direct hardware access</br>
+
+**CONS**</br>
+-Things like crashing / or memory leaks happen at an operating system level </br>
+  -This causes the whole computer to restart and if memory is not cleaned by the programmer that memory is leaked until the computer restarts </br>
+  -If you did something wrong that results in a crash you get a blue screen of death </br>
+-These are much harder to build from scratch. And typically a little harder to setup due to the low to no margin of error </br>
+-The ones that cost money typically cost a lot </br>
+-They are very intrusive and people that value privacy do not value tools like battleye since nearly every file on disk gets scanned and every running process gets scanned by this anti cheat which than uploads data back to the battleye master server </br>
+-Not recommended for begginers </br>
+  -The difficulty of programming a kernel driver can be a large enough con to switch to usermode </br>
+  -Little mistakes crash the entire computer </br>
+-They have to be signed by microsoft to be able to load without putting the pc in testmode </br>
+  -Putting a computer in testmode leaves it vulnerable because any kernel driver can be loaded at will </br>
